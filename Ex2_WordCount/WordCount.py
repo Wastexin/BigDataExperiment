@@ -41,10 +41,10 @@ def wordcount(isvisualize=False):
     :return: 将序排序结果RDD
     """
     # 读取停用词表
-    stopwords = getStopWords(SRCPATH + 'stop_words.txt')
+    stopwords = getStopWords("file://" + SRCPATH + 'stop_words.txt')
 
     # 结巴分词
-    words_list = jiebaCut(SRCPATH + "answers.txt")
+    words_list = jiebaCut("file://" + SRCPATH + "answers.txt")
 
     # 词频统计
     wordsRdd = sc.parallelize(words_list)
