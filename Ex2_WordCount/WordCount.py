@@ -80,8 +80,8 @@ def wordcount(isvisualize=False):
 if __name__ == '__main__':
 
     # 进行词频统计并可视化
-    # resRdd = wordcount(isvisualize=True)
-    # print(resRdd.take(10))  # 查看前10个
+    resRdd = wordcount(isvisualize=True)
+    print(resRdd.take(10))  # 查看前10个
 
     answers_filePath = 'src/answers.txt'
     answersRdd = sc.textFile(answers_filePath)
