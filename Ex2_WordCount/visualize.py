@@ -10,7 +10,7 @@ from snapshot_selenium import snapshot
 from pyecharts import options as opts
 from pyecharts.charts import Pie
 
-SAVAPATH = 'results/'
+SAVAPATH = '/home/hadoop/BigDataExperiment/Ex2_WordCount/results/'
 
 class visualize:
 

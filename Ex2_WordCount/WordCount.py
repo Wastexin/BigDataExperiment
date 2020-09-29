@@ -6,7 +6,7 @@ from pyspark import SparkConf, SparkContext
 from visualize import visualize
 import jieba
 
-SRCPATH = 'src/'
+SRCPATH = '/home/hadoop/BigDataExperiment/Ex2_WordCount/src'
 
 # conf = SparkConf().setAppName("ex2").setMaster("spark://master:7077")
 conf = SparkConf().setAppName("ex2").setMaster("local")
