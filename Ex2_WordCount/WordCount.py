@@ -7,6 +7,7 @@ from visualize import visualize
 import jieba
 
 SRCPATH = '/home/hadoop/BigDataExperiment/Ex2_WordCount/src/'
+#SRCPATH = 'src/'
 
 # conf = SparkConf().setAppName("ex2").setMaster("spark://master:7077")
 conf = SparkConf().setAppName("ex2").setMaster("local")
@@ -45,6 +46,7 @@ def wordcount(isvisualize=False):
 
     # 结巴分词
     words_list = jiebaCut("file://" + SRCPATH + "answers.txt")
+    #words_list = jiebaCut(SRCPATH + "answers.txt")
 
     # 词频统计
     wordsRdd = sc.parallelize(words_list)
